@@ -1,4 +1,4 @@
-var express = require('express');
+var express = require('express').createServer();
 var path = require('path');
 
 const PORT = 8000;
