@@ -20,5 +20,22 @@
 	
 </div>
 
+<script>
+var app = angular.module("myApp", []);
+
+app.controller('nameCtrl', function($scope) {
+    $scope.name = "Ansh";
+});
+
+app.controller('one', function($scope){
+	$scope.arr = [{'id': 1, 'name': 'abc'}, {'id': 2, 'name': 'def'}, {'id': 3, 'name': 'ghi'}];
+	$scope.c = 0;
+	
+	$scope.clicked = function(i){
+		$scope.c = i;
+	};
+});
+</script>
+
 </body>
 </html>
