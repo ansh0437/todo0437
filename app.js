@@ -10,5 +10,5 @@ app.set('views', './views');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(request, response){
-	response.render('index', {title: 'Todo App'});
+	response.render('index.html', {title: 'Todo App'});
 });
