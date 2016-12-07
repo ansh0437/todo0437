@@ -6,11 +6,6 @@ Todo App
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <body data-ng-app="myApp">
 
-<div style="display:none;" data-ng-controller="nameCtrl">
-  <input data-ng-model="name" />
-  <div>{{name}}</div>
-</div>
-
 <div data-ng-controller="one">
 
 	<button data-ng-click="clicked(1)">One</button>
@@ -24,10 +19,6 @@ Todo App
 
 <script>
 var app = angular.module("myApp", []);
-
-app.controller('nameCtrl', function($scope) {
-    $scope.name = "Ansh";
-});
 
 app.controller('one', function($scope){
 	$scope.arr = [{'id': 1, 'name': 'abc'}, {'id': 2, 'name': 'def'}, {'id': 3, 'name': 'ghi'}];
