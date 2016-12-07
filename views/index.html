@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="angularApp.js"></script>
+<body data-ng-app="myApp">
+
+<div style="display:none;" data-ng-controller="nameCtrl">
+  <input data-ng-model="name" />
+  <div>{{name}}</div>
+</div>
+
+<div data-ng-controller="one">
+
+	<button data-ng-click="clicked(1)">One</button>
+	<button data-ng-click="clicked(2)">Two</button>
+	<button data-ng-click="clicked(3)">Three</button>
+	<button data-ng-click="clicked(4)">Four</button>
+
+	<p>	Choice : {{ c }} </p>
+	
+</div>
+
+</body>
+</html>

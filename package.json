@@ -1,0 +1,20 @@
+{
+  "name": "todo0437",
+  "version": "1.0.0",
+  "description": "todo app",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "^1.5.9",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/todo0437.git"
+  },
+  "author": "Ansh",
+  "license": "ISC"
+}
