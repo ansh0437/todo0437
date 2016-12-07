@@ -1,9 +1,9 @@
-var express = require('express').createServer();
+var express = require('express');
 var path = require('path');
 
 const PORT = 8000;
 
-var app = express();
+var app = express().createServer();
 
 app.set('views', './views');
 app.use(express.static(path.join(__dirname, 'public')));
