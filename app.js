@@ -3,10 +3,11 @@ var path = require('path');
 
 const PORT = 8000;
 
-var app = express().createServer();
+var app = express();
 
-app.set('views', './views');
-app.use(express.static(path.join(__dirname, 'public')));
+//app.set('views', './views');
+//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'views')));
 
 app.get('/', function(request, response){
 	response.render('index.html');
