@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<title>
+Todo App
+</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="angularApp.js"></script>
+<body data-ng-app="myApp">
+
+<div data-ng-controller="counter">
+
+	<div ng-hide="true">
+		<button data-ng-click="counter()">Counter</button>
+		<p> Count : {{ count }} </p>
+	</div>
+	
+	<div>
+		<button data-ng-click="load()">Todo's</button>	
+		<div class="checkbox" ng-repeat="t in todos">
+			<label>
+				<input type="checkbox"> {{ t.todo }}
+			</label>
+		</div>
+	</div>
+	
+	<div>
+		<textarea type="text" ng-model="new_todo"></textarea>
+		<button data-ng-click="add()">Add</button>
+	</div>
+	
+</div>
+
+</body>
+</html>
