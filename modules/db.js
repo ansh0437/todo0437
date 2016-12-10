@@ -1,13 +1,34 @@
 var sql = require('mysql');
 
 var sql_connection = sql.createConnection({
+	host: 'mysql4.gear.host',
+	user: 'todo0437',
+	password: 'Om483OG!9J7_',
+	database: 'todo0437'
+});
+
+module.exports = sql_connection;
+
+/*
+freemysqlhosting.net
+
+var sql_connection = sql.createConnection({
 	host: 'sql6.freemysqlhosting.net',
 	user: 'sql6148795',
 	password: 'GDUAWIiPrD',
 	database: 'sql6148795'
 });
 
-module.exports = sql_connection;
+Gear Host
+
+var sql_connection = sql.createConnection({
+	host: 'mysql4.gear.host',
+	user: 'todo0437',
+	password: 'Om483OG!9J7_',
+	database: 'todo0437'
+});
+
+*/
 
 /*
 function open(){

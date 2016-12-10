@@ -16,17 +16,20 @@ app.controller('counter', function($scope, $http){
 	
 	$scope.add = function(){
 		var todo = $scope.new_todo;
-
-		console.log('Todo: ' + todo);
-				
-		$http({
-				url: '/todo', 
-				method: "POST",
-				data: "todo="+todo,
-				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-			}).then(function(res){
-				console.log('response = ' + JSON.stringify(res.data));
-			});
-			
+		
+		if(todo.length > 0){
+			console.log('Todo: ' + todo);
+					
+			$http({
+					url: '/todo', 
+					method: "POST",
+					data: "todo="+todo,
+					headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+				}).then(function(res){
+					console.log('response = ' + JSON.stringify(res.data));
+				});
+		}else
+			alert('Todo empty...');
+		
 	};
 });
